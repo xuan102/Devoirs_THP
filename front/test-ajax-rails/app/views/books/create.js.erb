@@ -1,0 +1,4 @@
+alert("le fichier JS est execute!");
+
+document.getElementById("book-list").inserAdjacentHTML("beforeend", "<li>nouveau livre </li>")
+document.getElementById("book-list").inserAdjacentHTML("beforeend", "<%= j render 'book', book: @book %>")
