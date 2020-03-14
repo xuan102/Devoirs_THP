@@ -1,0 +1,208 @@
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "testxuan_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "testxuan_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4081577890437181995)[0m
+  ↳ bin/rails:9
+  [1m[35m (25.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (45.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4081577890437181995)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 127.0.0.1 at 2020-03-14 12:17:17 +0100
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/wang/.rvm/gems/ruby-2.5.1/gems/activerecord-5.2.4.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/wang/.rvm/gems/ruby-2.5.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/wang/.rvm/gems/ruby-2.5.1/gems/railties-5.2.4.1/lib/rails/templates/rails/welcome/index.html.erb (5.4ms)
+Completed 200 OK in 47ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2020-03-14 12:17:27 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcomes" for 127.0.0.1 at 2020-03-14 12:19:56 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/welcomes"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2020-03-14 12:20:30 +0100
+  
+NameError (undefined local variable or method `pages' for #<ActionDispatch::Routing::Mapper:0x00007fc71846c490>):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/users" for 127.0.0.1 at 2020-03-14 12:20:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-14 12:20:43 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.1) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-03-14 12:20:57 +0100
+  
+SyntaxError (/home/wang/Téléchargements/Gossip-master/config/routes.rb:3: unknown regexp options - wlc
+/home/wang/Téléchargements/Gossip-master/config/routes.rb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+  get '/welcome/:first_name', to: 'pages#welcome'
+                           ^
+/home/wang/Téléchargements/Gossip-master/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+...elcome/:first_name', to: 'pages#welcome'
+...                          ^~~~~):
+  
+config/routes.rb:3: unknown regexp options - wlc
+config/routes.rb:3: syntax error, unexpected tSTRING_BEG, expecting keyword_end
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2020-03-14 12:45:23 +0100
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 359ms (Views: 357.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2020-03-14 12:45:34 +0100
+Processing by PagesController#contacts as HTML
+  Rendering pages/contacts.html.erb within layouts/application
+  Rendered pages/contacts.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/equipe" for 127.0.0.1 at 2020-03-14 12:45:35 +0100
+Processing by PagesController#equipe as HTML
+  Rendering pages/equipe.html.erb within layouts/application
+  Rendered pages/equipe.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2020-03-14 12:45:37 +0100
+Processing by PagesController#welcome as HTML
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/xuan" for 127.0.0.1 at 2020-03-14 12:45:41 +0100
+Processing by PagesController#welcome as HTML
+  Parameters: {"first_name"=>"xuan"}
+  Rendering pages/welcome.html.erb within layouts/application
+  Rendered pages/welcome.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
